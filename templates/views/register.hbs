@@ -1,0 +1,87 @@
+<html lang='en'>
+
+  <head>
+    <meta charset='UTF-8' />
+    <meta http-equiv='X-UA-Compatible' content='IE=edge' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <title>Registration form</title>
+    <link rel='stylesheet' href='css/registerform.css' />
+    <link
+      rel='stylesheet'
+      href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css'
+    />
+
+  </head>
+  <body style='background-image: url(pics/bg6.jpg);'>
+    <div id='container'>
+      <header>Register with US</header>
+      <form action='/register' method='POST' onsubmit='return myfun()'>
+        <fieldset>
+          <br />
+          <input
+            type='text'
+            name='username'
+            id='username'
+            placeholder='Username'
+            required
+            autofocus
+          />
+          <br /><br />
+          <input
+            type='email'
+            name='email'
+            id='email'
+            placeholder='E-mail'
+            required
+          />
+          <br /><br />
+          <input
+            type='text'
+            name='phoneNumber'
+            id='phoneNumber'
+            maxlength='11'
+            pattern='.{11}'
+            required
+            title='11 characters length'
+            value=''
+            placeholder='phonenumber'
+            required
+          />
+          <br /><br />
+          <input
+            type='password'
+            name='password'
+            id='password'
+            pattern='.{8,}'
+            required
+            title='8 characters minimum'
+            placeholder='Password'
+            required
+          />
+
+          <br /><br />
+          <input
+            type='password'
+            name='confirmpassword'
+            id='confirmpassword'
+            placeholder='Confirm Password'
+            required
+          />
+          <span id='messages' style='color: crimson; font-size: large;'></span>
+          <br />
+          <br />
+          <label for='submit'></label>
+          <input type='submit' name='submit' id='submit' value='Submit' />
+        </fieldset>
+      </form>
+    </div>
+  </body>
+
+  <script>
+    function myfun() { var a = document.getElementById("password").value; var b
+    = document.getElementById("confirmpassword").value; if (a != b) {
+    document.getElementById("messages").innerHTML = "password are not same";
+    return false; } }
+  </script>
+
+</html>

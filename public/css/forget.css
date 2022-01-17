@@ -1,0 +1,60 @@
+html,body { height: 100%; }
+
+body{
+	
+	
+	display: flex;
+	-ms-flex-align: center;
+	align-items: center;
+	justify-content: center;
+    background-image: url("pics/bg6.jpg");
+}
+
+form{
+	padding-top: 10px;
+	font-size: 14px;
+	margin-top: 30px;
+    height: 300px;
+    
+}
+
+
+
+.card-title{ font-weight:300; }
+
+.btn{
+    border-radius:6px;
+    border:none;
+    outline: none;
+    color: black;
+    display: block;
+    font-size: 16px;
+    padding: 15px 0;
+    margin-top: 20px;
+    width: 100%;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all is ease;
+    background: linear-gradient(to right, #74ebd5,#9face6);
+}
+
+
+
+
+.login-form{ 
+	width:320px;
+	margin:20px;
+    
+}
+
+
+
+h3{
+    text-align: center;
+    vertical-align: middle;
+    line-height: 3rem;
+    height: 3rem;
+    font-size: 1.4rem;
+    background: linear-gradient(to left,#74ebd5,#9face6);
+    padding: 30px , 0;
+}

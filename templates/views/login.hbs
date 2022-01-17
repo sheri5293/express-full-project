@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student login</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+
+<body style="background-image: url(pics/bg6.jpg);">
+    
+    <form>
+        <div class="login-box">
+            <h1>Login</h1>
+            <div class="textbox">
+                <i class="fa fa-user"></i>
+                <input type="text" name="username" id="username" placeholder="Username" required autofocus>
+            </div>
+            <div class="textbox">
+
+                <i class="fa fa-lock"></i>
+                <input type="password" name="password" id="password" pattern=".{8,}" required
+                    title="8 characters minimum" placeholder="Password" required>
+            </div>
+            <label for="submit"></label>
+            <input type="submit" class="btn" name="sign in" id="sign in" value="sign in ">
+
+
+            <p style="color: white; padding-left: 15px;">
+                <a href="forget" style="color: white;"> Forgot Password?</a>
+            </p>
+        </div>
+    </form>
+</body>
+
+</html>
